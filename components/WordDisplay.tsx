@@ -81,7 +81,7 @@ const Word = memo(function Word({ word, typed, isActive, isPast }: WordProps) {
                 const color =
                     i < typed.length
                         ? typed[i] === char
-                            ? "text-black"
+                            ? "text-blue-600"
                             : "text-red-500"
                         : "text-neutral-400";
 
