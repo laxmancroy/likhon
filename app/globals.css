@@ -23,6 +23,10 @@
   --accent: #f4f5f5;
   --accent-foreground: #18181b;
 
+  /* This is for any button in my website */
+  --button: #4F46E5;
+  --button-foreground: #FFFFFF;
+
   --border: #e4e4e7;
   --input: #e4e4e7;
   --ring: #18181b;
@@ -30,6 +34,8 @@
   --radius: 0.5rem;
 }
 
+/* Tailwind CSS v4 theme directive. */
+/* stylelint-disable at-rule-no-unknown */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -52,6 +58,9 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
 
+  --color-button: var(--button);
+  --color-button-foreground: var(--button-foreground);
+
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
@@ -59,6 +68,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
+/* stylelint-enable at-rule-no-unknown */
 
 /* This is for Dark Theme */
 @media (prefers-color-scheme: dark) {
@@ -83,6 +94,9 @@
 
     --accent: #27272a;
     --accent-foreground: #fafafa;
+
+    --button: #4F46E5;
+    --button-foreground: #FFFFFF;
 
     --border: #27272a;
     --input: #27272a;
